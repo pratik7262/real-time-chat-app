@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='../static/style.css')
+    link(rel='stylesheet', href='../static/style2.css', media='(max-width:768px)')
+    title CTR Chat
+  body
+    //
+      droped design
+      <div id="userInfo">
+      <div id="left">
+      <div id="myInfo">
+      <img class="user" src="user.png" alt="">
+      <p id="userName"></p>
+      </div>
+      <input type="text" id="searchBar" placeholder="Search Here">
+      <img class="user" src="user2.png" alt="">
+      <p>Vedant Dandge</p>
+      </div>
+      </div>
+    #right
+      #void
+        #myInfo
+          img.user(src='../static/user.png', alt='')
+          p#userName
+      #chat
+        //
+          demo masseges
+          <div class="userMsg">
+          <p class="name">Vedant</p>
+          <p class="msg">hi how are you</p>
+          </div>
+          <div class="myMsg">
+          <p class="name">You</p>
+          <p class="msg">I am fine</p>
+          </div>
+          <div class="myMsg">
+          <p class="name">You</p>
+          <p class="msg">What About You</p>
+          </div>
+          <div class="info">
+          Sandip Joined Chat
+          </div>
+          <div class="userMsg">
+          <p class="name">Vedant</p>
+          <p class="msg">hi how are you</p>
+          </div>
+          <div class="myMsg">
+          <p class="name">You</p>
+          <p class="msg">I am fine</p>
+          </div>
+          <div class="myMsg">
+          <p class="name">You</p>
+          <p class="msg">What About You</p>
+          </div>
+          <div class="info">
+          <p>Sandip Joined Chat</p>
+          </div>
+      #msg-container
+        form#send-form(action='#')
+          input#message(type='text', name='message', placeholder='Message')
+          button#sb(type='submit') Send
+    script(defer='', src='http://localhost:8000/socket.io/socket.io.js')
+    script(defer='', src='../static/clint.js')

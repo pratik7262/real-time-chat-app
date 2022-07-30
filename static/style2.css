@@ -1,0 +1,21 @@
+.info{
+    width: auto;
+    left:0;
+    font-size: 0.9rem;
+}
+
+.myMsg,.userMsg{
+    height: auto;
+    width: 50vw;
+    font-size: 0.9rem;  
+}
+
+#message{
+    height: 3vh;
+    font-size: 0.9rem;
+}
+
+#sb{
+    height: 3vh;
+    font-size: 0.9rem; 
+}
