@@ -1,3 +1,5 @@
+const io = require('socket.io')(8000)
+
 const socket=io('http://localhost:8000');
 
 
